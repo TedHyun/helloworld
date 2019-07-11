@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>mvc</display-name>
+ 	<servlet>
+		<servlet-name>hello</servlet-name>
+		<servlet-class>web.mvc.controller.HelloController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>hello</servlet-name>
+	<url-pattern>/hello.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>loginFrom</servlet-name>
+		<servlet-class>web.mvc.controller.LoginController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>loginFrom</servlet-name>
+	<url-pattern>/loginFrom.hd</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>loginPro</servlet-name>
+		<servlet-class>web.mvc.controller.LoginProController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>loginPro</servlet-name>
+	<url-pattern>/loginPro.hd</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>test</servlet-name>
+		<servlet-class>web.mvc.controller.TestController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>test</servlet-name>
+	<url-pattern>/test.do</url-pattern>
+	</servlet-mapping>
+	
+	 
+	 
+	<!--  <servlet>
+	 	<servlet-name>member</servlet-name>
+	 	<servlet-class>web.mvc.member.MemberController</servlet-class>
+	 	<init-param>
+	 		<param-name>propertiesPath</param-name>
+	 		<param-value>C:\Users\ASUS\Desktop\자료\딱따구리\mvc\WebContent\WEB-INF\properties\memberURI.properties</param-value>
+	 	</init-param>
+	 </servlet>
+	 
+	 <servlet-mapping>
+	 	<servlet-name>member</servlet-name>
+	 	<url-pattern>*.do</url-pattern>
+	 </servlet-mapping> -->
+	 
+	 <servlet>
+	 <servlet-name>board</servlet-name>
+	 <servlet-class>web.board.board.BoardController</servlet-class>
+	 <init-param>
+	 	<param-name>boardpropertiesPath</param-name>
+	 	<param-value>C:\Users\ASUS\Desktop\자료\딱따구리\mvc\WebContent\WEB-INF\properties\boardURI.properties</param-value>
+	 </init-param>
+	 </servlet>
+	 
+	 <servlet-mapping>
+	 	<servlet-name>board</servlet-name>
+	 	<url-pattern>*.dt</url-pattern>
+	 </servlet-mapping>
+
+</web-app>
