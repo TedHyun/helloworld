@@ -1,0 +1,21 @@
+package frame.aop.advice;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
+
+public class BeforeAdvice {
+	
+	public void hello(JoinPoint j) {
+		System.out.println("before advice");
+	}
+	
+	public void after(JoinPoint j) {
+		System.out.println("after advice");
+	}
+	//before + after
+	public String around(ProceedingJoinPoint j) {
+		System.out.println("around");
+		return "/0716/main";
+	}
+	
+}

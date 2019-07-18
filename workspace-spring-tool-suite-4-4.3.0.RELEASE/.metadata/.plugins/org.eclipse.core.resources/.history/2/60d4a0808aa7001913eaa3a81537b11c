@@ -1,0 +1,13 @@
+package frame.aop.advice;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+
+public class LoginAdvice {
+	
+	@Around("execution(public String login*(..)")
+	public Object around(ProceedingJoinPoint pj)throws Throwable {
+		Object [] arg = pj.getArgs();
+		return null;
+	}
+}

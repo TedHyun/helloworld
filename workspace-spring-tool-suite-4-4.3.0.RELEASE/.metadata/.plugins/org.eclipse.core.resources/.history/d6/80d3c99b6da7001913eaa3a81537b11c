@@ -1,0 +1,9 @@
+package frame.aop.advice;
+
+public class BeforeAdvice {
+	
+	public void hello() {
+		System.out.println("before advice");
+	}
+	
+}

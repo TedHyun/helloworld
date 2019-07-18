@@ -1,0 +1,23 @@
+package frame.spring.bean;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/active/")
+public class ActiveBean {
+
+	@Autowired
+	private SqlSessionTemplate sql = null;
+	
+	
+	@RequestMapping("active.do")
+	public String active() {
+		int count = (Integer)sql.selectOne("active.count");
+		System.out.println(count);
+		return "/0718/active";
+	}
+	
+}

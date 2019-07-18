@@ -1,0 +1,11 @@
+package frame.aop.advice;
+
+import org.aspectj.lang.JoinPoint;
+
+public class BeforeAdvice {
+	
+	public void hello(JoinPoint j) {
+		System.out.println("before advice");
+	}
+	
+}

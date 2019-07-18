@@ -1,0 +1,3 @@
+#Tomcat publish data
+#Thu Jul 18 12:14:46 KST 2019
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\ASUS\\Documents\\workspace-spring-tool-suite-4-4.3.0.RELEASE\\frame\\WebContent\\WEB-INF\\lib\\spring-web-4.3.4.RELEASE.jar=WEB-INF/lib/spring-web-4.3.4.RELEASE.jar

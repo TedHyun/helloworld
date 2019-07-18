@@ -1,0 +1,15 @@
+package frame.spring.bean;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/active/")
+public class ActiveBean {
+
+	@RequestMapping("active.do")
+	public String active() {
+		return "/0718/active";
+	}
+	
+}

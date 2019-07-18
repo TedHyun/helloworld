@@ -1,0 +1,45 @@
+package frame.spring.bean;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/board/")
+public class BoardBean {
+	
+	@RequestMapping("list.do")
+	public String main() {
+	
+		return "/board/list";
+	}
+	@RequestMapping("content.do")
+	public String content() {
+	
+		return "/board/content";
+	}@RequestMapping("deleteForm.do")
+	public String deleteForm() {
+	
+		return "/board/deleteForm";
+	}@RequestMapping("deletePro.do")
+	public String deletePro() {
+	
+		return "/board/deletePro";
+	}@RequestMapping("updateForm.do")
+	public String inputForm() {
+	
+		return "/board/updateForm";
+	}@RequestMapping("updatePro.do")
+	public String updatePro() {
+	
+		return "/board/updatePro";
+	}@RequestMapping("writerForm.do")
+	public String writerForm() {
+	
+		return "/board/writerForm";
+	}@RequestMapping("writerPro.do")
+	public String writerPro() {
+	
+		return "/board/writerPro";
+	}
+	
+}

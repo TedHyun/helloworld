@@ -1,0 +1,15 @@
+package frame.spring.bean;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/board/")
+public class BoardBean {
+	
+	@RequestMapping("/main/")
+	public String main() {
+	
+		return "/board/main";
+	}
+}
